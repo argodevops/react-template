@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+    ui:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+            args:
+                NPM_AUTH_TOKEN: $NPM_AUTH_TOKEN
+        ports:
+            - "3001:80"
+        volumes:
+            - ./config.json:/usr/share/nginx/html/config.json

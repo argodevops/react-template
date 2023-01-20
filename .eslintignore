@@ -1,0 +1,10 @@
+**src/fonts/*
+**src/images/*
+**src/utilities/geodesy/*
+*.json
+*.css
+*.md
+*.test.js*
+*.test.jsx*
+webpack.*.js
+*.svg

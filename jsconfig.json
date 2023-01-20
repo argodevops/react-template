@@ -1,0 +1,18 @@
+{
+    "typeAcquisition": {
+        "include": ["jest"]
+    },
+    "exclude": [
+        "node_modules",
+        "**/node_modules",
+        "dist",
+        "**/dist",
+        "web-build",
+        "**/web-build",
+        "coverage",
+        "**/coverage",
+        ".git",
+        ".husky",
+        ".parcel-cache"
+    ]
+}
