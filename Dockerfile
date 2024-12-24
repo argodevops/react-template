@@ -25,7 +25,7 @@ RUN pnpm i --frozen-lockfile &&\
     pnpm build
 
 # Deploy stage
-FROM nginx:latest
+FROM nginx:1.27.3-alpine3.20-slim
 
 COPY --from=workspace /app/dist/ /usr/share/nginx/html
 COPY default.conf /etc/nginx/conf.d/default.conf
